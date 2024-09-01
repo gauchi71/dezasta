@@ -17,7 +17,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  line-height: 2;
+  line-height: 1;
   /*デフォルトの文字色、font-familyを予め当てておく*/
   color: #222;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
