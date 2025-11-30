@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+body {
+    background: gray;
+}
+
+header {
+    position: relative;
+}
+
+.header_slider img {
+    width: 100%;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7% 0 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_logo {
+    width: 227px;
+}
+
+.pc_nav ul {
+    display: flex;
+    gap: 54px;
+}
+
+.pc_nav ul li {
+    width: 105px;
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+main {
+    background-color: #e8d9bf;
+}
+
+.catch_en {
+    padding: 96px 0 48px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.catch_ja_main {
+    font-size: 82px;
+    text-align: center;
+    line-height: 117%;
+    letter-spacing: 0.1em;
+    font-feature-settings: "palt";
+}
+
+.catch_ja_sub {
+    padding: 48px 96px;
+    font-size: 23px;
+    text-align: center;
+    line-height: 165%;
+    font-feature-settings: "palt";
+}
+
+.about_us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about_us_pic img {
+    display: block;
+    margin: 0 auto;
+    border-bottom-right-radius: 83px;
+}
+
+.coffee {
+    font-size: 44px;
+    line-height: 138%;
+    margin: 48px 0 24px 0;
+    text-align: left;
+    font-feature-settings: "palt";
+
+}
+
+.coffee_ex {
+    font-size: 16px;
+    line-height: 162%;
+    text-align: left;
+    font-feature-settings: "palt";
+}
+
+.title {
+    text-align: center;
+    margin: 96px 0 48px 0;
+}
+
+.MENU {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.MENU {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.MENU img {
+    border-top-right-radius: 42px;
+}
+
+p.index {
+    font-size: 38px;
+    color: #d30202;
+    margin: -12px 0 0 12px;
+}
+
+p.sentence {
+    margin: 32px 48px 40px 0;
+    width: 300px;
+    font-size: 17px;
+    line-height: 141%;
+    text-align: left;
+    letter-spacing: 0.1em;
+    font-feature-settings: "palt";
+}
+
+.GALLERY {
+    display: flex;
+    justify-content: space-between;
+}
+
+.EVENT {
+    max-width: 1000px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventbox {
+    height: 200px;
+    width: 1000px;
+    background-color:
+        white;
+    border: 3.6px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    font-size: 23px;
+    line-height: 195%;
+    letter-spacing: 0.1em;
+    font-feature-settings: "palt";
+    text-align: left;
+    margin: 40px 55px 40px 0;
+}
+
+.content {
+    font-size: 23px;
+    line-height: 195%;
+    letter-spacing: 0.1em;
+    font-feature-settings: "palt";
+    text-align: left;
+    text-decoration: underline;
+    margin: 40px 55px 40px 0;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 470px;
+}
+
+footer {
+    background-color: white;
+
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 83px 0 70px 0;
+}
+
+.footerlogo img {
+    display: block;
+    width: 50%;
+}
+
+p.information {
+    font-size: 20px;
+    line-height: 195%;
+    letter-spacing: 0.1em;
+    font-feature-settings: "palt";
+}
+
+.pagetop {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 125px;
+}
+
+p.copy {
+    font-size: 16px;
+    line-height: 218%;
+    letter-spacing: 0.1em;
+    font-feature-settings: "palt";
+    text-align: center;
+}
+.sp_btn,
+.sp_nav {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .pc_nav {
+        display: none;
+    }
+
+    .sp_btn {
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+    }
+
+    .sp_btn span {
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        position: absolute;
+        transition: 0.3s;
+
+
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    .sp_btn.open span {
+
+        background: transparent;
+    }
+
+        .sp_btn.open span::before {
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+
+        .sp_btn.open span::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+        .sp_nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+
+        }
+
+        .sp_nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap: 40px;
+        }
+
+        .sp_nav li {
+            color: #fff;
+            font-size: 18px;
+            font-family: "游ゴシック体", YuGothic, " 游ゴシック", " Yu Gothic", " メイリオ",
+                "Hiragino Kaku Gothic ProN",
+                "Hiragino Sans",
+                sans-serif;
+            font-weight: bold;
+        }
+
+    }
+    
+    .slick-dots {
+        bottom: 25px;
+    }
+
+    .slick-dots li.slick-active button:before,
+    .slick-dots li button:before {
+        color: #fff;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
